@@ -22,5 +22,6 @@ from ecobuyBE import views
 urlpatterns = [
     path('user_buy/', views.user_buy_product),
     path('ecobuy/', include('ecobuyBE.urls')),
+    path('userData/', views.get_user_data, name='get_user_data'),
     path('admin/', admin.site.urls),
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

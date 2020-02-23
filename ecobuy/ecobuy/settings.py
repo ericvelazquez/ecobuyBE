@@ -25,9 +25,9 @@ SECRET_KEY = '9$-45chi#_$9ul0%zm#6+gymtg#1eki3qnh^7qxut6y3o3ca&e'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["10.219.128.29", "172.20.10.10"]
+ALLOWED_HOSTS = ["10.219.128.29", "172.20.10.10", "127.0.0.1"]
 
-
+CORS_ORIGIN_ALLOW_ALL = True
 # Application definition
 
 INSTALLED_APPS = [
