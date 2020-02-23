@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html  >
+{% load static %}
+<head>
+    <title>EcoBUY</title>
+</head>
+<body>
+
+    <h1>Welcome to EcoBuy</h1>
+
+    <h2>Users</h2>
+    {% for user in users %}
+    
+    <h5>Email :  {{ user.email }} </h5>
+    <h5> Country : {{ user.country }}</h5> 
+    <h5> ECO rate : {{ user.ecobuy_rate }}</h5> 
+    <h5> Number of products : {{ user.number_of_products }}</h5> 
+    -------------
+    {% endfor %}
+
+    <h2>Products</h2>
+    {% for product in products %}
+    <h5>Name : {{ product.name }}</h5>
+    <h5>User : {{ product.user.email }}</h5>
+    <h5>Rate : {{ product.ecobuy_rate }}</h5>
+    <h5>Price : {{ product.price }}</h5>
+    <h5>Country : {{ product.country }}</h5>
+    -------------
+    {% endfor %}
+</body>
+</html>
